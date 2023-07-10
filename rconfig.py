@@ -84,7 +84,9 @@ class RoopConfig:
     ALLOWED_EXTENSIONS_VIDEO = os.getenv('ALLOWED_EXTENSIONS', ('avi' 'mov' 'mp4' 'mpeg'))
     MAX_FILE_SIZE_IMAGES = 10 * 1024 * 1024  # 10MB
     MAX_FILE_SIZE_VIDEO = 10 * 1024 * 1024  # 10MB
-    
+    """
+    Extensions, size for video and images.
+    """   
     @staticmethod
     def init_app(app):
         """
