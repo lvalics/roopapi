@@ -26,7 +26,7 @@ RabbitMQ is a powerful message queuing system that offers several benefits for i
 ## 2. Configuration
 - To get the code, use the command.  This command clones the repository into the api directory.
 
-```git clone https://github.com/lvalics/roopapi.git api```
+```git clone https://github.com/lvalics/roopapi api```
 
 - Locate the `rconfig.py` file and fill in the necessary values. This configuration file contains the required settings for your RabbitMQ setup and folder structures.
 
