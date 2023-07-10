@@ -6,7 +6,6 @@ from flask import Flask, request, jsonify, send_from_directory, redirect, sessio
 from werkzeug.utils import secure_filename
 import pika, json, os, time, uuid
 from rconfig import RoopConfig
-from rworker import main as worker_main
 
 app = Flask(__name__)
 app.config.from_object(RoopConfig)
