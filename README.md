@@ -22,7 +22,7 @@ RabbitMQ is a powerful message queuing system that offers several benefits for i
 - Refer to the official RabbitMQ documentation to install RabbitMQ on your Ubuntu server (RabbitMQ.md).. If you are using a different environment, please consult ChatGPT for assistance.
 
 ## 2. Configuration
-- To get the code, use the command **git clone https://github.com/lvalics/roopapi.git api**. This command clones the repository into the api directory.
+- To get the code, use the command ```git clone https://github.com/lvalics/roopapi.git api``` This command clones the repository into the api directory.
 - Locate the `rconfig.py` file and fill in the necessary values. This configuration file contains the required settings for your RabbitMQ setup and folder structures.
 
 ## 3. Environment Setup
