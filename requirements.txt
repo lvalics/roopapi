@@ -1,0 +1,9 @@
+pika
+requests
+flask 
+cryptography
+diffusers
+transformers
+accelerate
+scipy
+torch
