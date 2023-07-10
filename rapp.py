@@ -107,6 +107,7 @@ def process_file():
 
     # Save the source to the upload folder
     source_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+    source.stream.seek(0)  # Ensure we're at the start of the file stream
     source.save(source_path)
     app.logger.debug(f"Saved source file to: {source_path}")
 
