@@ -33,8 +33,8 @@ def process_job(job_data):
         '-o', output_path,
     ]
 
-    # Check if the execution provider is GPU or CPU
-    execution_provider = 'gpu' if torch.cuda.is_available() else 'cpu'
+    # Check if the execution provider is GPU or CPU (choose from 'tensorrt', 'cuda', 'cpu')
+    execution_provider = 'cuda' if torch.cuda.is_available() else 'cpu'
     command.append('--execution-provider')
     command.append(execution_provider)
 
