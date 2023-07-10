@@ -1,4 +1,6 @@
-# Setting up the API.
+# Setting up the ROOP API.
+
+First of all, you need ot have a working ROOP project. To access the project, visit the [ROOP GitHub repository](https://github.com/s0md3v/roop/).
 
 ## Why RabbitMQ for Job Processing?
 RabbitMQ is a powerful message queuing system that offers several benefits for implementing job processing systems. It is particularly advantageous when handling computationally intensive tasks like face swapping. Here are the key reasons why RabbitMQ is an excellent choice:
