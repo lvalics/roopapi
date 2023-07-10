@@ -9,8 +9,8 @@ from rconfig import RoopConfig
 
 # Set up logging
 logging.basicConfig(
-    filename=app.config['LOG_FILE_WORKER'],
-    level=app.config['LOGGING_LEVEL'],
+    filename=RoopConfig.LOG_FILE_WORKER,
+    level=RoopConfig.LOGGING_LEVEL,
     format='%(asctime)s [%(levelname)s] %(message)s',
 )
 
