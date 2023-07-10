@@ -1,5 +1,18 @@
 # Setting up the API.
 
+## Why RabbitMQ for Job Processing?
+RabbitMQ is a powerful message queuing system that offers several benefits for implementing job processing systems. It is particularly advantageous when handling computationally intensive tasks like face swapping. Here are the key reasons why RabbitMQ is an excellent choice:
+
+1. Scalability: RabbitMQ enables the distribution of workload across multiple workers, making it easy to scale your job processing system. This ensures efficient handling of high volumes of requests without overwhelming the server.
+
+2. Asynchronous Processing: With RabbitMQ, jobs can be processed asynchronously. Upon receiving a job request, RabbitMQ places it in a message queue, allowing the API to quickly respond to the caller while the actual job processing happens in the background. This asynchronous approach significantly enhances the performance and responsiveness of your API.
+
+3. Reliability: RabbitMQ guarantees message delivery even in the face of failures. In case a worker goes offline or a server crashes, RabbitMQ ensures that messages are not lost and can be processed once the system is back online. This reliability is essential, especially for critical or time-sensitive job processing.
+
+4. Load Balancing: RabbitMQ enables the even distribution of jobs across multiple workers, ensuring optimal workload balancing. By distributing tasks efficiently, RabbitMQ maximizes resource utilization and improves overall system efficiency.
+
+5. Priority Queues: RabbitMQ supports priority queues, allowing you to assign different priorities to jobs. This feature is particularly useful for handling urgent or high-priority tasks, ensuring they are processed promptly.
+
 ## Prerequisites
 - A server environment (e.g., Linux, Ubuntu)
 - Python (version compatible with the required packages)
