@@ -27,7 +27,7 @@ def process_job(job_data):
     target_path = os.path.join(RoopConfig.TEMPLATE_FOLDER, job_data['target_path'])
     command = [
         'python',
-        '../run.py',
+        os.path.join(RoopConfig.ROOP_ROOT_FOLDER, 'run.py'),
         '-s', job_data['source_path'],
         '-t', target_path,
         '-o', output_path,
