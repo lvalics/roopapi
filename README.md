@@ -29,6 +29,8 @@
 - Open Postman (or a similar tool) and make a POST request to `https://YOUR_URL/process`. Include the required parameters in the request body, as shown in the provided image.
 - Send the request, and the job processing should commence successfully.
 
+![Image Description](upload/postman.png)
+![Image Description](upload/postman_answers.png)
 ## Additional Notes
 - Ensure that you have the "roop" package installed, as it is a prerequisite for this setup.
 - Inside the "roop" package, you should have a folder named "api" with the required file structure. Make sure it is present.
