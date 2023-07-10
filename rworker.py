@@ -26,7 +26,7 @@ def process_job(job_data):
     output_path = os.path.join(RoopConfig.FINAL_FOLDER, str(job_data['job_id']) + '.png')
     target_path = os.path.join(RoopConfig.TEMPLATE_FOLDER, job_data['target_path'])
     command = [
-        'python3',
+        'python',
         '../run.py',
         '-s', job_data['source_path'],
         '-t', target_path,
