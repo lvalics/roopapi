@@ -5,7 +5,8 @@ class RoopConfig:
     """
     Configuration class for the image processing application.
     """
-    ROOT_FOLDER = os.getenv('ROOT_FOLDER', '/home/roop/api/')  #CHANGE IT!!!!!
+    ROOP_ROOT_FOLDER = os.getenv('ROOT_FOLDER', '/home/roop/')  # CHANGE IT!!!!!
+    ROOT_FOLDER = f"{ROOP_ROOT_FOLDER}api/"
     """
     Root folder where is the API. API folder need to be inside of roop directory.
     """
